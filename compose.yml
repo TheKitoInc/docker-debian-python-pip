@@ -1,0 +1,8 @@
+include:
+  - https://github.com/TheKitoInc/docker-debian-python.git
+
+services:
+  kito-debian-python:
+    depends_on: [kito-debian-python]
+    build: .
+    image: kito-debian-python-pip:latest
